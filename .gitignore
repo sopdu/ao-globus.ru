@@ -1,0 +1,7 @@
+/bitrix/*
+/upload/*
+1.php
+.htaccess.restore
+.htaccess
+/test/
+test.php
