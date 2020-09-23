@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Новый раздел");
+$APPLICATION->SetPageProperty("TITLE", "Профиль организации");
+$APPLICATION->SetTitle("Профиль организации");
 ?>
 
 <?$APPLICATION->IncludeComponent(

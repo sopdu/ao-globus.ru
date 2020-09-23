@@ -5,3 +5,5 @@
 .htaccess
 /test/
 test.php
+/.idea/*
+/.git/*

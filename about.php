@@ -1,5 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "Globus, Глобус, производство товаров для школы и офиса, циркули, клей-карандаш, скрепки, скобы, пластилин");
+$APPLICATION->SetPageProperty("description", "Globus, Глобус, производство товаров для школы и офиса, циркули, клей-карандаш, скрепки, скобы, пластилин");
 $APPLICATION->SetPageProperty("TITLE", "О компании");
 $APPLICATION->SetTitle("О компании");
 ?>

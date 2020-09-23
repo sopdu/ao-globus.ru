@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Технологии");
 	"bitrix:news", 
 	"technologies", 
 	array(
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
@@ -136,6 +136,8 @@ $APPLICATION->SetTitle("Технологии");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
 		"COMPONENT_TEMPLATE" => "technologies",
+		"COMPOSITE_FRAME_MODE" => "A",
+		"COMPOSITE_FRAME_TYPE" => "AUTO",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

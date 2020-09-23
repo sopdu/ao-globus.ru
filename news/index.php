@@ -1,10 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Новый раздел");
+$APPLICATION->SetPageProperty("TITLE", "Новости");
+$APPLICATION->SetTitle("Новости");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news", 
-	"news", 
-	array(
+	"bitrix:news",
+	"news",
+	Array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
 		"AJAX_MODE" => "N",
@@ -21,43 +22,11 @@ $APPLICATION->SetTitle("Новый раздел");
 		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_DISPLAY_BOTTOM_PAGER" => "Y",
 		"DETAIL_DISPLAY_TOP_PAGER" => "N",
-		"DETAIL_FIELD_CODE" => array(
-			0 => "ID",
-			1 => "CODE",
-			2 => "XML_ID",
-			3 => "NAME",
-			4 => "TAGS",
-			5 => "SORT",
-			6 => "PREVIEW_TEXT",
-			7 => "PREVIEW_PICTURE",
-			8 => "DETAIL_TEXT",
-			9 => "DETAIL_PICTURE",
-			10 => "DATE_ACTIVE_FROM",
-			11 => "ACTIVE_FROM",
-			12 => "DATE_ACTIVE_TO",
-			13 => "ACTIVE_TO",
-			14 => "SHOW_COUNTER",
-			15 => "SHOW_COUNTER_START",
-			16 => "IBLOCK_TYPE_ID",
-			17 => "IBLOCK_ID",
-			18 => "IBLOCK_CODE",
-			19 => "IBLOCK_NAME",
-			20 => "IBLOCK_EXTERNAL_ID",
-			21 => "DATE_CREATE",
-			22 => "CREATED_BY",
-			23 => "CREATED_USER_NAME",
-			24 => "TIMESTAMP_X",
-			25 => "MODIFIED_BY",
-			26 => "USER_NAME",
-			27 => "",
-		),
+		"DETAIL_FIELD_CODE" => array("ID","CODE","XML_ID","NAME","TAGS","SORT","PREVIEW_TEXT","PREVIEW_PICTURE","DETAIL_TEXT","DETAIL_PICTURE","DATE_ACTIVE_FROM","ACTIVE_FROM","DATE_ACTIVE_TO","ACTIVE_TO","SHOW_COUNTER","SHOW_COUNTER_START","IBLOCK_TYPE_ID","IBLOCK_ID","IBLOCK_CODE","IBLOCK_NAME","IBLOCK_EXTERNAL_ID","DATE_CREATE","CREATED_BY","CREATED_USER_NAME","TIMESTAMP_X","MODIFIED_BY","USER_NAME",""),
 		"DETAIL_PAGER_SHOW_ALL" => "Y",
 		"DETAIL_PAGER_TEMPLATE" => "",
 		"DETAIL_PAGER_TITLE" => "Страница",
-		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"DETAIL_PROPERTY_CODE" => array("",""),
 		"DETAIL_SET_CANONICAL_URL" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
@@ -70,14 +39,8 @@ $APPLICATION->SetTitle("Новый раздел");
 		"IBLOCK_TYPE" => "information",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"LIST_FIELD_CODE" => array(
-			0 => "",
-			1 => "",
-		),
-		"LIST_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
-		),
+		"LIST_FIELD_CODE" => array("",""),
+		"LIST_PROPERTY_CODE" => array("",""),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
@@ -87,11 +50,12 @@ $APPLICATION->SetTitle("Новый раздел");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TEMPLATE" => "ils_pagenator",
 		"PAGER_TITLE" => "Новости",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"SEF_FOLDER" => "/news/",
 		"SEF_MODE" => "Y",
+		"SEF_URL_TEMPLATES" => Array("detail"=>"#ELEMENT_CODE#/","news"=>"/","section"=>"/"),
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
@@ -108,13 +72,6 @@ $APPLICATION->SetTitle("Новый раздел");
 		"USE_REVIEW" => "N",
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
-		"USE_SHARE" => "N",
-		"COMPONENT_TEMPLATE" => "news",
-		"SEF_URL_TEMPLATES" => array(
-			"news" => "/",
-			"section" => "/",
-			"detail" => "#ELEMENT_CODE#/",
-		)
-	),
-	false
+		"USE_SHARE" => "N"
+	)
 );?><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

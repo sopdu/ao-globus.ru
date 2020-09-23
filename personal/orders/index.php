@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Новый раздел");
+$APPLICATION->SetPageProperty("TITLE", "История заказов");
+$APPLICATION->SetTitle("История заказов");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:sale.personal.order.list",
 	"bootstrap_v4",
